@@ -1,0 +1,25 @@
+# Node / Python common
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment variables (IMPORTANT)
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build / dist
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
