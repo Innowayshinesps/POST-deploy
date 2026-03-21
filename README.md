@@ -10,12 +10,7 @@
     The agentic browser infrastructure for post-deployment security and geo-intelligence.
     <br />
     <br />
-    <a href="https://github.com/Innowayshinesps/POST-deploy/discussions">Discussions</a>
-    ·
     <a href="https://github.com/Innowayshinesps/POST-deploy/issues">Issues</a>
-    ·
-    <a href="https://github.com/Innowayshinesps/POST-deploy/roadmap">Roadmap</a>
-  </p>
 </p>
 
 <p align="center">
@@ -163,7 +158,7 @@ Every message goes through a **three-layer intent pipeline**:
 
 ## Live Demo
 
-<img src="<GIF: 20-second screen recording of POST-deploy in action — user opens extension on a Vercel site, types 'safe to launch?', spinning globe appears with 'Entire scan takes a minute or two...' text, then ghostscan results appear showing 1 HIGH finding with inline fix recommendation, then geo grid populates country by country with green/red status dots. Clean dark UI throughout.>" width="100%" alt="POST-deploy demo GIF" />
+<img src="https://github.com/user-attachments/assets/32a7d6e0-775e-4bba-9c17-a35abd29381d" width="100%" alt="POST-deploy demo GIF — user opens extension on a Vercel site, runs scan, sees ghostscan findings and geo grid results" width="100%" alt="POST-deploy demo GIF" />
 
 ---
 
@@ -452,9 +447,9 @@ When `network_urls = 0`, the summary explicitly warns: _"⚠️ Network requests
 
 The current version (v1.1) covers the core scan + geo loop. Planned for upcoming releases:
 
+- [ ] **Advanced Workflow Automation** — Automatically test real user journeys with smart form filling, button clicks, and multi-step interactions. Execute complex workflows across live websites seamlessly using TinyFish infrastructure.
 - [ ] **Policy Monitor** — Daily scraping of Stripe, OpenAI, AWS, GitHub, Vercel ToS pages. Semantic diff against previous versions using embeddings. Surface relevant policy changes inside the chat interface.
 - [ ] **Scan History Dashboard** — Visual timeline of findings per domain across scans. Trend lines for critical/high counts. Export to PDF.
-- [ ] **Performance Baseline** — Capture Core Web Vitals (LCP, CLS, FID) per country on each geo run. Alert on regressions vs. deployment baseline.
 - [ ] **Team Sharing** — Share scan results via permalink. Slack/email digest on new critical findings.
 - [ ] **CI/CD Integration** — GitHub Action that runs POST-deploy on every deployment. Block merge if CRITICAL findings detected.
 - [ ] **More Proxy Locations** — India, Brazil, South Korea, UAE as TinyFish expands supported regions.
